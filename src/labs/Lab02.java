@@ -1,6 +1,6 @@
 package labs;
 
-
+import java.util.Scanner;
 
 public class Lab02 {
 
@@ -16,9 +16,20 @@ public class Lab02 {
 
 	
 	public static void problem01() {
-		
-		
-		
+		Scanner inKey = new Scanner(System.in);
+		System.out.println("Enter an integer");
+		int input1 = inKey.nextInt();
+		System.out.println("Enter another integer");
+		int input2 = inKey.nextInt();
+		int loop = 10;
+		int max = Math.max(input1, input2);
+		int min = Math.min(input1, input2);
+		for (int i = 10; i > 0;) {
+			
+			int total = (int)(Math.random()* (max - min+1)+ min);
+			System.out.println(total);
+			i--;
+		}
 		
 	}
 	
@@ -26,18 +37,37 @@ public class Lab02 {
 	
 	
 	public static void problem02() {
+		Scanner inKey = new Scanner(System.in);
+		System.out.println("What is the Radius of the Cylinder?");
+		int rad = inKey.nextInt();
+		System.out.println("What is the Height of the Cylinder?");
+		int hi = inKey.nextInt();
+		double base = Math.PI * (rad * rad);
 		
+		double vol = base * hi;
 		
-		
+		System.out.println("The Volume of the Cylinder is: " + vol);
 	}
 
 	
 	
 
 	public static void problem03() {
-
 		
+		double num1 = Math.sqrt(10);
+		Scanner inKey = new Scanner(System.in);
+		System.out.println("Enter X1");
+		int x1 = inKey.nextInt();
+		System.out.println("Enter Y1");
+		int y1 = inKey.nextInt();
+		System.out.println("Enter X2");
+		int x2 = inKey.nextInt();
+		System.out.println("Enter Y2");
+		int y2 = inKey.nextInt();
 		
+		double total = ((x2 - x1)*(x2 - x1))+((y2 - y1)*(y2 - y1)) ;
+		double dist = Math.sqrt(total);
+		System.out.println("Distance between points = " + dist);
 	}
 
 
