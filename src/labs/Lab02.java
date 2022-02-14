@@ -74,10 +74,21 @@ public class Lab02 {
 	
 	
 	public static void problem04() {
-		
-		
-		
-		
+		double num1 = Math.sqrt(10);
+		Scanner inKey = new Scanner(System.in);
+		System.out.println("Enter a-value");
+		int a = inKey.nextInt();
+		System.out.println("Enter b-value");
+		int b = inKey.nextInt();
+		System.out.println("Enter c-value");
+		int c = inKey.nextInt();
+		double idk = ((b * b) - (4 *a * c));
+		double total1 = (-b + Math.sqrt(idk));
+		double total2 = (-b - Math.sqrt(idk));
+		double x1 = total1 / (2*a);
+		double x2 = total2 / (2*a);
+		System.out.println("x1 = " + x1);
+		System.out.println("x2 = " + x2);
 	}
 	
 	
