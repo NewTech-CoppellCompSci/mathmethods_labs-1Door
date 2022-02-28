@@ -25,7 +25,7 @@ public class PerformanceTask {
 		double lVsin = Math.sin(Math.toRadians(launchAngle));
 		
 	
-		System.out.println("Projectile's Path\n\n\n");
+		System.out.println("\n\nProjectile's Path\n\n");
 		while (killSwitch != 2)
 		
 		{
